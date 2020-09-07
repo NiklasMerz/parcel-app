@@ -16,7 +16,7 @@ export class LoginPage implements OnInit {
   }
 
   login() {
-    window.open('https://parcel.merz.dev/login');
+    window.open('https://niklas.merz.dev/login-test');
   }
 
 }
