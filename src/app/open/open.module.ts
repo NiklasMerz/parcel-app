@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { OpenPageRoutingModule } from './open-routing.module';
 
 import { OpenPage } from './open.page';
+import { QRScanner } from '@ionic-native/qr-scanner/ngx';
 
 @NgModule({
   imports: [
@@ -14,6 +15,9 @@ import { OpenPage } from './open.page';
     FormsModule,
     IonicModule,
     OpenPageRoutingModule
+  ],
+  providers: [
+    QRScanner
   ],
   declarations: [OpenPage]
 })
