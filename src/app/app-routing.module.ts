@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
+    path: 'login/:token',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: 'open',
     loadChildren: () => import('./open/open.module').then( m => m.OpenPageModule)
   }

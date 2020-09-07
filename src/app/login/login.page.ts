@@ -12,7 +12,10 @@ export class LoginPage implements OnInit {
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
-    this.token = this.activatedRoute.snapshot.paramMap.get('token');
+    this.activatedRoute.paramMap.subscribe((params) => {
+      this.token = params.get('token');
+      console.debug(this.token);
+    });
   }
 
   login() {

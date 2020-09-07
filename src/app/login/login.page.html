@@ -17,5 +17,13 @@
   <div id="container">
     <p><strong class="capitalize">Login</strong></p>
     <ion-button (click)="login()">Test Auth</ion-button>
+
+    <!-- Test UI-->
+    <br>
+    <br>
+    <p *ngIf="token">
+      Login Success. Token is:
+    </p>
+    {{token}}
   </div>
 </ion-content>
